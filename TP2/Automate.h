@@ -1,5 +1,4 @@
-#ifndef AUTOMATE_H
-#define AUTOMATE_H
+#pragma once
 
 #include <iostream>
 #include <string>
@@ -10,21 +9,19 @@
 #define MOORE 0
 #define MEALY 1
 
-using namespace std;
-
 
 class Automate {
 
 public:
 	Automate() : type_(-1), nbEtats_(0) {}
 	~Automate() {}
-	Automate(string file);
+	Automate(std::string file);
 
 	// Calcule le parcours de sortie avec la chaine de caractreres en entree
-	string calculerSortie(string mot);
+	std::string calculerSortie(std::string mot);
 
 	// Cree un fichier correspondant a l'automate courant
-	void genererFichierAutomate(string file);
+	void genererFichierAutomate(std::string file);
 
 	// Retourne l'automate de Moore minimale equivalent a l'automate courant
 	Automate* minimiserMoore();
@@ -39,19 +36,17 @@ public:
 	bool estDeterministe() const;
 	bool estReactif() const;
 
-	string getType() const;
+	std::string getType() const;
 	unsigned int getNbEtats() const { return nbEtats_; }
 
 	// Permet d'afficher l'automate
-	friend ostream &operator<<(ostream &out, const Automate &a);
+	friend std::ostream &operator<<(std::ostream &out, const Automate &a);
 
 
 private:
 	int type_;
 	unsigned int nbEtats_;
-	vector<Etat*> etats_;
+	std::vector<Etat*> etats_;
 	Etat* etatInitial_;
 
 };
-
-#endif

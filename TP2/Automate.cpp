@@ -1,11 +1,11 @@
 #include "stdafx.h"
 #include "Automate.h"
 
-Automate::Automate(string file) {
+Automate::Automate(std::string file) {
 
-	ifstream reader(file.c_str(), ifstream::in);
+	std::ifstream reader(file.c_str(), std::ifstream::in);
 	
-	string type;
+	std::string type;
 	reader >> type;
 	
 	if (type == "Moore")
@@ -18,7 +18,7 @@ Automate::Automate(string file) {
 	for (int i = 0; i < nbEtats_; i++)
 		ajouterEtat(new Etat(i));
 
-	string line;
+	std::string line;
 
 	while (!reader.eof()) {
 
@@ -27,13 +27,13 @@ Automate::Automate(string file) {
 		if (line != "") {
 
 			if (line[0] == 'I') {
-				etatInitial_ = etats_[line[2]];
+				etatInitial_ = etats_[line[2] - 48];
 			}
 
 			if (type_ == MEALY) {
 				if (line.size() == 7) {
 					char etiquette[2] = { line[2], line[4] };
-					etats_[line[0]]->ajouterTransition(etiquette, etats_[line[6]]);
+					etats_[line[0] - 48]->ajouterTransition(etiquette, etats_[line[6] - 48]);
 				}
 			}
 
@@ -41,25 +41,25 @@ Automate::Automate(string file) {
 				if (line.size() == 7) {
 					char etiquette[1] = { line[2] };
 
-					etats_[line[0]]->ajouterTransition(etiquette, etats_[line[6]]);
-					etats_[line[0]]->ajouterSortie(line[4]);
+					etats_[line[0] - 48]->ajouterTransition(etiquette, etats_[line[6] - 48]);
+					etats_[line[0] - 48]->ajouterSortie(line[4] - 48);
 				}
 
 				if (line.size() == 5) {
 					char etiquette[1] = { line[2] };
-					etats_[line[0]]->ajouterTransition(etiquette, etats_[line[4]]);
+					etats_[line[0] - 48]->ajouterTransition(etiquette, etats_[line[4] - 48]);
 				}
 			}
 
 			else
-				cout << "Ligne incorrecte !" << endl;
+				std::cout << "Ligne incorrecte !" << std::endl;
 		}
 	}
 
 	reader.close();
 }
 
-string Automate::getType() const {
+std::string Automate::getType() const {
 	
 	if (type_ == MOORE)
 		return "Moore";
@@ -69,8 +69,8 @@ string Automate::getType() const {
 	return "No type";
 }
 
-ostream &operator<<(ostream &out, const Automate &a) {
-	out << "Type: " << a.getType() << endl;
-	out << "Nb d'etats: " << a.getNbEtats() << endl;
+std::ostream &operator<<(std::ostream &out, const Automate &a) {
+	out << "Type: " << a.getType() << std::endl;
+	out << "Nb d'etats: " << a.getNbEtats() << std::endl;
 	return out;
 }

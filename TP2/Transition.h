@@ -1,10 +1,8 @@
-#ifndef TRANSITION_H
-#define TRANSITION_H
+#pragma once
 
+class Etat;
+#include "Etat.h"
 #include <string>
-
-using namespace std;
-
 
 class Transition {
 
@@ -14,7 +12,7 @@ public:
 	~Transition() {}
 
 	// Méthode d'accès
-	string getEtiquette();
+	std::string getEtiquette();
 	Etat* getEtatEntrant();
 	Etat* getEtatSortant();
 
@@ -23,5 +21,3 @@ private:
 	Etat* sortant_;
 	char* etiquette_;
 };
-
-#endif

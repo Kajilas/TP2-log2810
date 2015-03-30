@@ -1,63 +1,18 @@
-﻿Build started 30/03/2015 2:33:01 PM.
-     1>Project "C:\Users\Sebastien\Documents\Polytechnique\Hiver 2015\LOG2810\TP2\TP2\TP2.vcxproj" on node 2 (Build target(s)).
+﻿Build started 30/03/2015 3:13:50 PM.
+     1>Project "C:\Users\Sebastien\Documents\Polytechnique\Hiver 2015\LOG2810\TP2\TP2-log2810\TP2\TP2.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\TP2.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Automate.cpp Etat.cpp TP2.cpp
-         TP2.cpp
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(13): error C2061: syntax error : identifier 'Etat'
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(18): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(18): warning C4183: 'getEtatEntrant': missing return type; assumed to be a member function returning 'int'
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(19): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(19): warning C4183: 'getEtatSortant': missing return type; assumed to be a member function returning 'int'
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(22): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(23): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(13): error C2065: 'entree' : undeclared identifier
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(13): error C2065: 'sortie' : undeclared identifier
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(13): error C2065: 'etiquette' : undeclared identifier
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(13): error C2614: 'Transition' : illegal member initialization: 'entrant_' is not a base or member
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(13): error C2614: 'Transition' : illegal member initialization: 'sortant_' is not a base or member
-         Etat.cpp
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(13): error C2061: syntax error : identifier 'Etat'
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(18): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(18): warning C4183: 'getEtatEntrant': missing return type; assumed to be a member function returning 'int'
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(19): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(19): warning C4183: 'getEtatSortant': missing return type; assumed to be a member function returning 'int'
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(22): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(23): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(13): error C2065: 'entree' : undeclared identifier
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(13): error C2065: 'sortie' : undeclared identifier
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(13): error C2065: 'etiquette' : undeclared identifier
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(13): error C2614: 'Transition' : illegal member initialization: 'entrant_' is not a base or member
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(13): error C2614: 'Transition' : illegal member initialization: 'sortant_' is not a base or member
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\etat.cpp(5): error C2661: 'Transition::Transition' : no overloaded function takes 3 arguments
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\TP2.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Automate.cpp
          Automate.cpp
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(13): error C2061: syntax error : identifier 'Etat'
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(18): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(18): warning C4183: 'getEtatEntrant': missing return type; assumed to be a member function returning 'int'
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(19): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(19): warning C4183: 'getEtatSortant': missing return type; assumed to be a member function returning 'int'
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(22): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(23): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(13): error C2065: 'entree' : undeclared identifier
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(13): error C2065: 'sortie' : undeclared identifier
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(13): error C2065: 'etiquette' : undeclared identifier
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(13): error C2614: 'Transition' : illegal member initialization: 'entrant_' is not a base or member
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\transition.h(13): error C2614: 'Transition' : illegal member initialization: 'sortant_' is not a base or member
-     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2\automate.cpp(18): warning C4018: '<' : signed/unsigned mismatch
-         Generating Code...
-     1>Done Building Project "C:\Users\Sebastien\Documents\Polytechnique\Hiver 2015\LOG2810\TP2\TP2\TP2.vcxproj" (Build target(s)) -- FAILED.
+     1>c:\users\sebastien\documents\polytechnique\hiver 2015\log2810\tp2\tp2-log2810\tp2\automate.cpp(18): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Sebastien\Documents\Polytechnique\Hiver 2015\LOG2810\TP2\TP2-log2810\Debug\TP2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Sebastien\Documents\Polytechnique\Hiver 2015\LOG2810\TP2\TP2-log2810\Debug\TP2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Sebastien\Documents\Polytechnique\Hiver 2015\LOG2810\TP2\TP2-log2810\Debug\TP2.lib" /MACHINE:X86 Debug\Automate.obj
+         Debug\Etat.obj
+         Debug\stdafx.obj
+         Debug\TP2.obj
+         Debug\Transition.obj
+         TP2.vcxproj -> C:\Users\Sebastien\Documents\Polytechnique\Hiver 2015\LOG2810\TP2\TP2-log2810\Debug\TP2.exe
+     1>Done Building Project "C:\Users\Sebastien\Documents\Polytechnique\Hiver 2015\LOG2810\TP2\TP2-log2810\TP2\TP2.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:01.05
+Time Elapsed 00:00:00.84

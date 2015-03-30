@@ -1,12 +1,8 @@
-#ifndef ETAT_H
-#define ETAT_H
+#pragma once
 
+class Transition;
 #include "Transition.h"
 #include <vector>
-#include <string>
-
-
-using namespace std;
 
 class Etat {
 
@@ -20,26 +16,24 @@ public:
 	bool existeTransition(char e) const;
 
 	// Indique l'ensemble des états de destination portant l'étiquette e
-	vector<Etat*> cible(char e) const;
+	std::vector<Etat*> cible(char e) const;
 
 	// Indique l'ensemble des états de destination partant de l'état courant
-	vector<Etat*> cible() const;
+	std::vector<Etat*> cible() const;
 
 	// Ajouter une transition sortant de l'état présent vers l'état e 
 	void ajouterTransition(char* etiquette, Etat* e);
 
 	// Parcours la liste de transition et en ressort une liste de chaque étiquette
-	vector<char> listerEtiquettes() const;
+	std::vector<char> listerEtiquettes() const;
 
 	void ajouterSortie(int sortie) { sortie_ = sortie; }
 
 private:
 	int sortie_;
 	unsigned int id_;
-	vector<Etat*> etats_;
-	vector<Transition*> transitions_;
+	std::vector<Etat*> etats_;
+	std::vector<Transition*> transitions_;
 
 
 };
-
-#endif
