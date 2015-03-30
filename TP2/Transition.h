@@ -1,23 +1,24 @@
 #pragma once
 
 class Etat;
+#include <vector>
 #include "Etat.h"
-#include <string>
+
 
 class Transition {
 
 public:
 	// Constructreur et destructeur
-	Transition(Etat* entree, Etat* sortie, char* etiquette) : entrant_(entree), sortant_(sortie), etiquette_(etiquette) {}
+	Transition(Etat* eEntrant, Etat* eSortant, std::vector<char> etiquette) : eEntrant_(eEntrant), eSortant_(eSortant), etiquette_(etiquette) {}
 	~Transition() {}
 
 	// Méthode d'accès
-	std::string getEtiquette();
-	Etat* getEtatEntrant();
-	Etat* getEtatSortant();
+	Etat* getEtatEntrant() { return eEntrant_; }
+	Etat* getEtatSortant() { return eSortant_; }
+	std::vector<char> getEtiquette() { return etiquette_; }
 
 private:
-	Etat* entrant_;
-	Etat* sortant_;
-	char* etiquette_;
+	Etat* eEntrant_;
+	Etat* eSortant_;
+	std::vector<char> etiquette_;;
 };

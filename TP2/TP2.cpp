@@ -13,6 +13,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	Automate automate("machine_test.txt");
 	cout << automate;
 
+	automate.genererFichierAutomate("output.txt");
+
 	return 0;
 }
 

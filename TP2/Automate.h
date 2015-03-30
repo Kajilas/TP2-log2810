@@ -17,25 +17,26 @@ public:
 	~Automate() {}
 	Automate(std::string file);
 
-	// Calcule le parcours de sortie avec la chaine de caractreres en entree
-	std::string calculerSortie(std::string mot);
-
 	// Cree un fichier correspondant a l'automate courant
 	void genererFichierAutomate(std::string file);
 
-	// Retourne l'automate de Moore minimale equivalent a l'automate courant
+	//TODO: Calcule le parcours de sortie avec la chaine de caracteres en entree
+	std::string calculerSortie(std::string mot);
+
+	//TODO: Retourne l'automate de Moore minimale equivalent a l'automate courant
 	Automate* minimiserMoore();
 
-	// Convertisseurs de machines
+	//TODO: Convertisseurs de machines
 	Automate* convertMooreToMealy();
 	Automate* convertMealyToMoore();
+
+	//TODO: methode isReactif de la classe Etat
+	bool isReactif() const;
+	bool isDeterministe() const;
 
 	void ajouterEtat(Etat* e) { etats_.push_back(e); }
 
 	Etat* getEtatInitial() const { return etatInitial_; }
-	bool estDeterministe() const;
-	bool estReactif() const;
-
 	std::string getType() const;
 	unsigned int getNbEtats() const { return nbEtats_; }
 
